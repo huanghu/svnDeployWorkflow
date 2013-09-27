@@ -1,0 +1,1 @@
+svn_path=D:\Java\program\ebsdi\maven.1379495293888

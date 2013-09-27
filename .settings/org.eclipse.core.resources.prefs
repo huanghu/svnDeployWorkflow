@@ -1,3 +1,6 @@
+#Fri Sep 27 19:59:19 GMT+08:00 2013
 eclipse.preferences.version=1
 encoding//com/main.py=UTF-8
+encoding//com/svn/getSvnInfo.py=gbk
+encoding//com/unitTest/svnTest.py=gbk
 encoding/<project>=UTF-8
