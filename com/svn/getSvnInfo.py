@@ -12,7 +12,8 @@ class SvnInfo(object):
     '''
 
     def svnCommand(self):
-        print os.path.abspath("../../")
+        file = os.path.abspath("../../conf") + "\path.txt"
+        
 #        file = open("../../")
 #        command = "D:\Java\program\ebsdi\maven.1379495293888";
 #        os.chdir(command)
