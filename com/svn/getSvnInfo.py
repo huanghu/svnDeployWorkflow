@@ -1,22 +1,37 @@
-# -*- coding: gbk -*-
+# -*- coding: utf-8 -*-
 '''
 Created on 2013-9-21
 
 @author: huanghu
 '''
 import os
+from com.utils.readFile import Read
 
 class SvnInfo(object):
-    '''
-    classdocs
-    '''
+    
+    def __init__(self):
+        self.read = Read()
+        self.workPath = ''
 
+    #执行svn命令，将svn 信息放入info.txt文件夹
     def svnCommand(self):
-        file = os.path.abspath("../../conf") + "\path.txt"
+        filePath = os.path.abspath("../../conf") + "\path.txt"
+
+        key = "svn_path";
+        self.workPath = self.read.read(filePath, key)
+        os.chdir(self.workPath)
+        command = "svn info > info.txt"
+        os.system(command)
         
-#        file = open("../../")
-#        command = "D:\Java\program\ebsdi\maven.1379495293888";
-#        os.chdir(command)
-#        command = "svn info > info.txt"
-#        os.system(command)
+    def getSvnInfo(self):
+        self.svnCommand()
+        
+        #info.txt文件的路径
+        infoPath = self.workPath + '/info.txt'
+        key = '版本'
+        svnInfo = self.read.read(infoPath, key);
+        print svnInfo
+        
+        
+        
         

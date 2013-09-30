@@ -1,8 +1,10 @@
+# -*- coding: utf-8 -*-
 '''
 Created on 2013-9-21
 
 @author: huanghu
 '''
+import sys
 
 if __name__ == '__main__':
     '''
@@ -16,6 +18,6 @@ if __name__ == '__main__':
     '''
     将目录打包
     '''
-    
+    print sys.argv[1]
     
     pass

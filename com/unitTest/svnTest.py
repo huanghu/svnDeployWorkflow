@@ -13,9 +13,8 @@ class Test(unittest.TestCase):
     def setUp(self):
         self.svn = SvnInfo();
 
-
     def testName(self):
-        self.svn.svnCommand();
+        self.svn.getSvnInfo();
 
 
 if __name__ == "__main__":
