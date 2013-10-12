@@ -1,1 +1,2 @@
 svn_path=D:\Java\program\ebsdi-test\ebsdi
+workflow_dir_path=D:\Java\program\ebsdi-test\ebsdi\ebsdi-apps\src\main\resources\main\vendor\adKc

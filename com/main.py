@@ -4,20 +4,13 @@ Created on 2013-9-21
 
 @author: huanghu
 '''
-import sys
 
 if __name__ == '__main__':
+    version = raw_input('输入svn版本号：')
     '''
     从svn获得版本号，或许需要改为从输入参数获得
     '''
     
     '''
-    从workflow获得工作了名称
+    递归目录，获得workflow名称，然后将其所在的目录打包
     '''
-    
-    '''
-    将目录打包
-    '''
-    print sys.argv[1]
-    
-    pass
