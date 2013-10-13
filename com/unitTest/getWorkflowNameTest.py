@@ -15,7 +15,8 @@ class Test(unittest.TestCase):
 
     def testName(self):
         path_name_conf = 'workflow_dir_path'
-        self.workflow.getWorkflowDirPath(path_name_conf)
+        path = self.workflow.getWorkflowDirPath(path_name_conf);
+        self.workflow.getWorkflowPathByRecursive(path)
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
