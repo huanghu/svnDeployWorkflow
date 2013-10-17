@@ -11,7 +11,9 @@ from com.xml.getWorkflowName import WorkflowName
 class Test(unittest.TestCase):
 
     def setUp(self):
-        self.workflow = WorkflowName()
+        svnVersion = '11111'
+        codeVersion = '0.4.001'
+        self.workflow = WorkflowName(svnVersion ,codeVersion)
 
     def testName(self):
         path_name_conf = 'workflow_dir_path'

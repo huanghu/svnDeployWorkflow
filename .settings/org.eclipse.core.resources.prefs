@@ -1,9 +1,11 @@
-#Thu Oct 10 19:38:56 GMT+08:00 2013
+#Wed Oct 16 20:17:14 GMT+08:00 2013
 eclipse.preferences.version=1
+encoding//com/deploy/deployToZip.py=utf-8
 encoding//com/main.py=utf-8
+encoding//com/opXml/getWorkflowName.py=utf-8
 encoding//com/svn/getSvnInfo.py=utf-8
 encoding//com/unitTest/getWorkflowNameTest.py=utf-8
 encoding//com/unitTest/svnTest.py=gbk
 encoding//com/utils/readFile.py=utf-8
-encoding//com/xml/getWorkflowName.py=utf-8
 encoding/<project>=UTF-8
+encoding/main.py=utf-8

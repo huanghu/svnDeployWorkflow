@@ -1,3 +1,5 @@
 svn_path=D:\Java\program\ebsdi-test\ebsdi
-#workflow_dir_path=D:\Java\program\ebsdi-test\ebsdi\ebsdi-apps\src\main\resources\main\vendor\adKc
-workflow_dir_path=/Users/huanghu/Documents/program/python/svnDeployWorkflow
+workflow_dir_path=D:\Java\program\ebsdi-test\ebsdi\ebsdi-apps\src\main\resources\main\vendor\adKc
+#workflow_dir_path=/Users/huanghu/Documents/program/python/svnDeployWorkflow
+target_path=D:\jd\upload
+code_version=0.4.001
