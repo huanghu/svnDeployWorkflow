@@ -7,7 +7,6 @@ Created on 2013-10-14
 import os
 from com.utils.readFile import Read
 from com.utils.common import Common
-import zipfile
 
 #部署到制定目录下，而且压缩为zip
 class Deploy(object):
@@ -27,7 +26,6 @@ class Deploy(object):
         self.copyXml();
         self.copyJar();
 
-
     def deleteMkdir(self):
         command = "rd " + self.target_path + " /s /q";
         os.system(command);
@@ -38,10 +36,12 @@ class Deploy(object):
         os.system(command);
         
     def copyJar(self):
-        appsJar_path = self.workflow_path + "\\ebsdi-apps\\target\\ebsdi-apps.jar";
-        domainJar_path = self.workflow_path + "\\ebsdi-domain\\target\\ebsdi-domain.jar";
-        coreJar_path = self.workflow_path + "\\ebsdi-core\\target\\ebsdi-core.jar";
-        target_lib_path = self.target_path + "lib\\";
+        key = 'svn_path';
+        svn_path = Read().getCommonValue(key)
+        appsJar_path = svn_path + "\\ebsdi-apps\\target\\ebsdi-apps.jar";
+        domainJar_path = svn_path + "\\ebsdi-domain\\target\\ebsdi-domain.jar";
+        coreJar_path = svn_path + "\\ebsdi-core\\target\\ebsdi-core.jar";
+        target_lib_path = self.target_path + "\lib\\";
         
         command = "xcopy " + appsJar_path + " " + target_lib_path;
         os.system(command);
