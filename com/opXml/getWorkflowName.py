@@ -31,6 +31,9 @@ class WorkflowName(object):
     
     #递归获得工作流的路径
     def getWorkflowPathByRecursive(self ,dirPath):
+        if dirPath.find(".svn") >= 0:
+            return
+        
         #获得目录下所有文件的内容
         dirPath = ''.join(dirPath.split())
         dirs = os.listdir(dirPath)

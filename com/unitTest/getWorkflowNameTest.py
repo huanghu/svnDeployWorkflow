@@ -5,7 +5,7 @@ Created on 2013-10-10
 @author: huanghu
 '''
 import unittest
-from com.xml.getWorkflowName import WorkflowName
+from com.opXml.getWorkflowName import WorkflowName
 
 
 class Test(unittest.TestCase):
@@ -16,8 +16,9 @@ class Test(unittest.TestCase):
         self.workflow = WorkflowName(svnVersion ,codeVersion)
 
     def testName(self):
-        path_name_conf = 'workflow_dir_path'
-        path = self.workflow.getWorkflowDirPath(path_name_conf);
+#        path_name_conf = 'workflow_dir_path'
+#        path = self.workflow.getWorkflowDirPath(path_name_conf);
+        path = "D:\Java\program\ebsdi-test\ebsdi-apps\src\main\\resources\main\\vendor\qlDhc";
         self.workflow.getWorkflowPathByRecursive(path)
 
 if __name__ == "__main__":

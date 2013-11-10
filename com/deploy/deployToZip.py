@@ -39,6 +39,7 @@ class Deploy(object):
         key = 'svn_path';
         svn_path = Read().getCommonValue(key)
         appsJar_path = svn_path + "\\ebsdi-apps\\target\\ebsdi-apps.jar";
+        print 'appsJar ' + appsJar_path
         domainJar_path = svn_path + "\\ebsdi-domain\\target\\ebsdi-domain.jar";
         coreJar_path = svn_path + "\\ebsdi-core\\target\\ebsdi-core.jar";
         target_lib_path = self.target_path + "\lib\\";
