@@ -38,20 +38,17 @@ class Deploy(object):
     def copyJar(self):
         key = 'svn_path';
         svn_path = Read().getCommonValue(key)
-        appsJar_path = svn_path + "\\ebsdi-apps\\target\\ebsdi-apps.jar";
-        print 'appsJar ' + appsJar_path
-        domainJar_path = svn_path + "\\ebsdi-domain\\target\\ebsdi-domain.jar";
-        coreJar_path = svn_path + "\\ebsdi-core\\target\\ebsdi-core.jar";
+        
+        jars_key = 'jars';
+        jars = Read().getCommonValue(jars_key);
+        
+        jar_arr = jars.split(',')
         target_lib_path = self.target_path + "\lib\\";
-        
-        command = "xcopy " + appsJar_path + " " + target_lib_path;
-        os.system(command);
-        
-        command = "xcopy " + domainJar_path + " " + target_lib_path;
-        os.system(command);
-        
-        command = "xcopy " + coreJar_path + " " + target_lib_path;
-        os.system(command);
+        for jar in jar_arr:
+            jar_path = svn_path + "\\" + jar + "\\target\\" + jar + ".jar";
+            print 'jar_path' + jar_path
+            command = "xcopy " + jar_path + " " + target_lib_path;
+            os.system(command);
 
     def getPath(self):
         read = Read();

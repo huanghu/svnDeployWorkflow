@@ -1,4 +1,4 @@
-svn_path=D:\Java\program\ebsdi-test
-workflow_dir_path=D:\Java\program\ebsdi-test\ebsdi-apps\src\main\resources\main\vendor\qlDhc
+svn_path=D:\Java\program\ebsdi\maven.1379495293888
+workflow_dir_path=D:\Java\program\ebsdi\maven.1379495293888\ebsdi-apps\src\main\resources\po\adminPurchase
 target_path=D:\jd\upload
-code_version=0.4.001
+code_version=0.4.002

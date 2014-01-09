@@ -1,0 +1,1 @@
+这个文件里的path.txt单元测试用，key需要和conf/path.txt保持一致
