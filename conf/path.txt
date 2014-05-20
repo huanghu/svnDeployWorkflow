@@ -1,5 +1,7 @@
-svn_path=D:\Java\program\rbtAdapter
-workflow_dir_path=D:\Java\program\rbtAdapter\rbtAdapter-apps\src\main\resources\lot_relation\poRcv
+#svn_path=D:\Java\program\ebsdi\maven.1379495293888
+svn_path=D:\Java\program\LogicalBatchManagement\dev20140326
+workflow_dir_path=D:\Java\program\LogicalBatchManagement\dev20140326\mapred\src\main\resources\lbm\fix
 target_path=D:\jd\upload
-code_version=0.2
-jars=rbtAdapter-core,rbtAdapter-apps
+code_version=0.4.002
+#jars=ebsdi-apps,ebsdi-domain,ebsdi-core
+jars=mapred,core
